@@ -1,0 +1,99 @@
+.navbar {
+  background-color: #432818;  
+  color: #fdf0d5;            
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  color: #FEFAE0;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  color: #fffdee;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  transform: scale(1.05);
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #FEFAE0;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: #FEFAE0;
+  padding: 8px;
+  background: transparent;
+  border: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+/* ✅ Responsive Design */
+/* زر القائمة في الجوال */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #432818; /* غيرناها من var(--primary-bg) */
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+    display: none;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  /* عرض القائمة لما يتفعل الزر */
+  .menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+}

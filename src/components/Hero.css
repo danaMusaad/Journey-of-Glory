@@ -1,0 +1,81 @@
+.hero {
+  background-image: url('../images/kings.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FEFAE0;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.15); /* طبقة ناعمة جدًا */
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  max-width: 750px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* ✅ Animation */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* لتحسين الوضوح */
+}
+
+.hero p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #fefae0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.hero-button {
+  background-color: #FEFAE0;
+  color: #432818;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #6a4e38;
+  color: #FEFAE0;
+  transform: scale(1.05);
+}
+
+
+/* إضافة طبقة شفافة فوق الخلفية */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* تغطية خفيفة */
+  z-index: 1;
+}
