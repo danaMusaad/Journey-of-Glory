@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Journey-of-Glory/static/css/main.f9cd9c15.css",
+    "main.js": "/Journey-of-Glory/static/js/main.2aa1f606.js",
+    "static/js/453.34d9f0aa.chunk.js": "/Journey-of-Glory/static/js/453.34d9f0aa.chunk.js",
+    "static/media/kings.jpeg": "/Journey-of-Glory/static/media/kings.39c2aa22aca290cede8f.jpeg",
+    "index.html": "/Journey-of-Glory/index.html",
+    "main.f9cd9c15.css.map": "/Journey-of-Glory/static/css/main.f9cd9c15.css.map",
+    "main.2aa1f606.js.map": "/Journey-of-Glory/static/js/main.2aa1f606.js.map",
+    "453.34d9f0aa.chunk.js.map": "/Journey-of-Glory/static/js/453.34d9f0aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9cd9c15.css",
+    "static/js/main.2aa1f606.js"
+  ]
+}
