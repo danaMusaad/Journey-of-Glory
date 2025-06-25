@@ -1,0 +1,59 @@
+.kings-section {
+  padding: 4rem 2rem;
+  background-color: #f5ebe0;
+  text-align: center;
+}
+
+.kings-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #432818;
+}
+
+.kings-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.king-subtext {
+  font-size: 15px;           /* حجم صغير جداً */
+  color: #d6cbb9;           /* لون فاتح */
+  font-weight: normal;      /* خط عادي */
+  margin-left: 5px;         /* فراغ بسيط على اليسار */
+  display: inline-block;    /* عشان يبقى مع النص */
+  vertical-align: middle;   /* توسيط عمودي */
+}
+
+
+.king-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.king-card:hover {
+  transform: scale(1.09); 
+  z-index: 10; 
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+}
+
+
+.king-name {
+  font-size: 1.8rem;
+  margin: 1rem 0 0.5rem;
+  padding: 8px;
+  color: #432818;
+}
+
+.king-description {
+  font-size: 1.2rem;
+  padding: 0 1rem 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
