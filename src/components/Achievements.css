@@ -44,6 +44,18 @@
   left: -50%;
 }
 
+/* Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .timeline-content {
   background: white;
   padding: 20px;
@@ -67,7 +79,7 @@
 
 .king-name {
   font-size: 1.4rem;
-  color: #2d2d2d;
+  color: #432818;
   margin-bottom: 8px;
 }
 

@@ -18,19 +18,19 @@
 }
 
 .king-subtext {
-  font-size: 15px;           /* حجم صغير جداً */
-  color: #d6cbb9;           /* لون فاتح */
-  font-weight: normal;      /* خط عادي */
-  margin-left: 5px;         /* فراغ بسيط على اليسار */
-  display: inline-block;    /* عشان يبقى مع النص */
-  vertical-align: middle;   /* توسيط عمودي */
+  font-size: 15px;
+  color: #d6cbb9;           
+  font-weight: normal;      
+  margin-left: 5px;         
+  display: inline-block;    
+  vertical-align: middle;   
 }
 
 
 .king-card {
   background-color: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(220, 156, 18, 0.1);
   width: 300px;
   overflow: hidden;
   cursor: pointer;
@@ -40,16 +40,16 @@
 .king-card:hover {
   transform: scale(1.09); 
   z-index: 10; 
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+  box-shadow: 0 8px 15px rgba(220, 156, 18, 0.1); 
 }
 
 
-.king-name {
+/* .king-name {
   font-size: 1.8rem;
   margin: 1rem 0 0.5rem;
   padding: 8px;
   color: #432818;
-}
+} */
 
 .king-description {
   font-size: 1.2rem;

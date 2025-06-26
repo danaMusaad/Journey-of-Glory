@@ -4,7 +4,7 @@ import './Kings.css';
 const Kings = () => {
   return (
     <section className="kings-section" id="kings">
-      <h2 className="kings-title">حكام المملكةالعربية السعودية</h2>
+      {/* <h2 className="kings-title">حكام المملكةالعربية السعودية</h2> */}
       <div className="kings-container">
 
         <div className="king-card">

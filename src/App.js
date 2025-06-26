@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Kings from './components/Kings';
 import Achievements from './components/Achievements';
+import KingsGallery from './components/KingsGallery';
 
 
 function App() {
@@ -11,8 +12,10 @@ function App() {
 
       <Navbar/>
       <Hero/>
+      <KingsGallery/>
       <Kings/>
       <Achievements/>
+      {/* <KingsGallery/> */}
 
     </div>
   );
