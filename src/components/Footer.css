@@ -1,0 +1,13 @@
+.site-footer {
+  background-color: #432818;
+  padding: 16px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #f5ebe0;
+  font-family: 'Tajawal', sans-serif;
+}

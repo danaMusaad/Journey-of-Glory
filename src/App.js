@@ -4,6 +4,10 @@ import Hero from './components/Hero';
 import Kings from './components/Kings';
 import Achievements from './components/Achievements';
 import KingsGallery from './components/KingsGallery';
+import AboutSection from './components/AboutSection';
+import Footer from './components/Footer';
+
+
 
 
 function App() {
@@ -15,7 +19,8 @@ function App() {
       <KingsGallery/>
       <Kings/>
       <Achievements/>
-      {/* <KingsGallery/> */}
+      <AboutSection/>
+      <Footer/>
 
     </div>
   );
